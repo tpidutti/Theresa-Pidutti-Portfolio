@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary-light: lightsteelblue;
-  --primary-dark: navy;
-  --secondary: skyblue;
-  --accent: cadetblue;
-}
-
 body {
   font-family: "Times New Roman", Times, serif;
   position: relative;
@@ -16,13 +9,11 @@ body {
   color: navy;
 }
 h1 {
-  background-color: var(--primary-light);
+  background-color: lightsteelblue;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .top {
@@ -64,9 +55,6 @@ h3 {
   display: inline-flex;
 }
 
-/* .show-it {
-  align-self: flex-end;
-} */
 .show-it1 li {
   background-color: cadetblue;
   display: inline-flex;
@@ -92,9 +80,6 @@ h3 {
   opacity: 0.5;
 }
 
-.show-it2 li {
-  text-decoration: underline;
-}
 .samples {
   /* width: 80vw; */
   flex-direction: column;
@@ -125,7 +110,7 @@ footer li {
 
 @media screen and (max-width: 1279px) {
   .top {
-    background-color: var(--primary-light);
+    background-color: lightsteelblue;
   }
 }
 
