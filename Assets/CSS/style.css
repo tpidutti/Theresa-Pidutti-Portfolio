@@ -1,62 +1,129 @@
 * {
-  color: black;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Times New Roman", Times, serif;
+  position: relative;
+  scroll-behavior: smooth;
+  color: navy;
+}
+h1 {
+  background-color: cadetblue;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-h1 {
-  background-color: paleturquoise;
-  display: inline-flex;
-}
 
+.top {
+  background-color: lightsteelblue;
+  display: flex;
+  flex-direction: column;
+}
 .top ul {
+  align-self: flex-end;
+}
+.top li {
+  display: inline-block;
+  margin-left: 25px;
   justify-content: flex-end;
+  color: cadetblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.pretty-pics {
+  display: flex-end;
 }
 nav h3 {
-  background-color: paleturquoise;
+  background-color: cadetblue;
   display: inline;
-  position: relative;
-  z-index: 2;
 }
+
 nav img {
   opacity: 0.5;
-  object-fit: fill;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 h3 {
   position: relative;
+  display: inline-flex;
 }
 
 p {
   text-align: right;
 }
 .show-it1 li {
-  border: solid blue;
+  background-color: cadetblue;
   display: inline-flex;
 }
+
+.show-it-big {
+  width: 80vw;
+}
+.show-it-big figure {
+  position: relative;
+}
+.show-it-big figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .show-it-big img {
-  border: 5px solid paleturquoise;
-  box-sizing: border-box;
-  width: 600px;
-  height: 200px;
-  object-fit: fill;
+  border: 5px solid cadetblue;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
 }
-.top {
-  background-color: gray;
-}
-.top li {
-  text-decoration: underline;
-}
+
 .show-it2 li {
   text-decoration: underline;
 }
+.samples {
+  width: 80vw;
+}
+
+.samples figure {
+  position: relative;
+}
+
+.samples figure figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .samples img {
-  border: 5px solid paleturquoise;
-  box-sizing: border-box;
-  width: 100;
-  height: 300px;
-  object-fit: fill;
+  border: 5px solid cadetblue;
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+footer li {
+  display: inline;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1279px) {
+  .top {
+    background-color: cyan;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    background-color: darkgreen;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .top {
+    background-color: deepskyblue;
+  }
 }
