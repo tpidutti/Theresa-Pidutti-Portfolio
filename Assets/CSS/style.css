@@ -1,6 +1,6 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 :root {
   --primary-light: lightsteelblue;
@@ -44,7 +44,8 @@ ul {
 }
 
 .pretty-pics {
-  display: flex-end;
+  height: 200px;
+  width: 100%;
 }
 nav h3 {
   background-color: cadetblue;
@@ -95,7 +96,8 @@ h3 {
   text-decoration: underline;
 }
 .samples {
-  width: 80vw;
+  /* width: 80vw; */
+  flex-direction: column;
 }
 
 .samples figure {
@@ -106,7 +108,7 @@ h3 {
   position: absolute;
   top: 50%;
   left: 10%;
-  transform: translate(-50%, -50%);
+  transform: translate(-25%, -25%);
 }
 .samples img {
   border: 5px solid cadetblue;
@@ -115,6 +117,7 @@ h3 {
   object-fit: cover;
   opacity: 0.5;
 }
+
 footer li {
   display: inline;
   margin-left: 25px;
@@ -122,7 +125,7 @@ footer li {
 
 @media screen and (max-width: 1279px) {
   .top {
-    background-color: cyan;
+    background-color: var(--primary-light);
   }
 }
 
@@ -132,7 +135,7 @@ footer li {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .top {
     background-color: deepskyblue;
   }
